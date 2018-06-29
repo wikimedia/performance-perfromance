@@ -1,0 +1,20 @@
+{
+  "name": "perfromance",
+  "version": "0.0.1",
+  "description": "Perfromance is our deeply romance with performance",
+  "homepage": "http://webpagereplay-wikimedia.s3-website-us-east-1.amazonaws.com/",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wikimedia/performance-perfromance.git"
+  },
+  "scripts": {
+    "test": "eslint .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-wikimedia": "^0.5.0"
+  }
+}
