@@ -2,7 +2,7 @@
 
 Perfromance is our deeply romance with performance. The name perfromance was invented by [Natalya Hoota at Etsy](https://twitter.com/lara_hogan/status/586548792318627842).
 
-We use it today to make it easy to browse the performance metrics we collect with Browsertime/WebPageReplay.
+We use it today to make it easy to browse the performance metrics we collect with [Browsertime/WebPageReplay](https://wikitech.wikimedia.org/wiki/Performance/WebPageReplay).
 
 Checkout the result: [http://webpagereplay-wikimedia.s3-website-us-east-1.amazonaws.com/?prefix=enwiki/](http://webpagereplay-wikimedia.s3-website-us-east-1.amazonaws.com/?prefix=enwiki/).
 
