@@ -90,7 +90,7 @@
 	}
 
 	function getTable( filesAndFolders, prefix, base ) {
-		var oneStepBack, removedSlash, blockList = [ 'index.html', 'robots.txt', 'style.css', 'index.js' ],
+		var oneStepBack, removedSlash, blockList = [ 'index.html', 'robots.txt', 'style.css', 'index.js', 'timeline' ],
 			i, rows, file, url;
 
 		if ( prefix ) {
@@ -114,6 +114,10 @@
 				rows += '<a href="' + url + '">' + file.name + '</a>';
 				rows += ' <a href = "https://compare.sitespeed.io?har1=' +
                     url.replace( 'http://', 'https://' ) + '&compare=1">[view]</a>';
+			} else if ( file.type === 'chrome-trace' ) {
+				rows += '<a href="' + url + '">' + file.name + '</a>';
+				rows += ' <a href = "/timeline/?loadTimelineFromURL=' +
+					url + '">[view]</a>';
 			} else if ( file.type === 'img' ) {
 				rows += file.name + '<a href="' + url + '"><img src = "' + url + '"width = 400 ></a>';
 			} else if ( file.type === 'video' ) {
